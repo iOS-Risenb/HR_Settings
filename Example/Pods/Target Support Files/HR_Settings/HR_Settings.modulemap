@@ -1,0 +1,6 @@
+framework module HR_Settings {
+  umbrella header "HR_Settings-umbrella.h"
+
+  export *
+  module * { export * }
+}

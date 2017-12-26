@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1E9A5227C015A12625C7174D /* Pods-HR_Settings_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HR_Settings_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HR_Settings_Example/Pods-HR_Settings_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		23DD6AE1302EAAE6F6E8ED65 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		23DD6AE1302EAAE6F6E8ED65 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		40F545AA83CA5DCC35DCD044 /* Pods-HR_Settings_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HR_Settings_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HR_Settings_Tests/Pods-HR_Settings_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4DE46870F1E78E8F7EE73C3A /* Pods-HR_Settings_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HR_Settings_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HR_Settings_Example/Pods-HR_Settings_Example.release.xcconfig"; sourceTree = "<group>"; };
 		548B468783CDFC2B7531CD47 /* Pods_HR_Settings_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HR_Settings_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,8 +65,8 @@
 		6B824274896502A13AED33D0 /* Pods-HR_Settings_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HR_Settings_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HR_Settings_Tests/Pods-HR_Settings_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C5118167B41C4BC4A0057012 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		F36EA3A29AD1CC6D832B7936 /* HR_Settings.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HR_Settings.podspec; path = ../HR_Settings.podspec; sourceTree = "<group>"; };
+		C5118167B41C4BC4A0057012 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F36EA3A29AD1CC6D832B7936 /* HR_Settings.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HR_Settings.podspec; path = ../HR_Settings.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = obgniyum;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = L7P6N237GX;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -385,10 +388,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HR_Settings_Example/Pods-HR_Settings_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HR_DataHexString/HR_DataHexString.framework",
 				"${BUILT_PRODUCTS_DIR}/HR_Settings/HR_Settings.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HR_DataHexString.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HR_Settings.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +538,7 @@
 			baseConfigurationReference = 1E9A5227C015A12625C7174D /* Pods-HR_Settings_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L7P6N237GX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HR_Settings/HR_Settings-Prefix.pch";
 				INFOPLIST_FILE = "HR_Settings/HR_Settings-Info.plist";
@@ -548,6 +554,7 @@
 			baseConfigurationReference = 4DE46870F1E78E8F7EE73C3A /* Pods-HR_Settings_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L7P6N237GX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HR_Settings/HR_Settings-Prefix.pch";
 				INFOPLIST_FILE = "HR_Settings/HR_Settings-Info.plist";

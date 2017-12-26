@@ -1,0 +1,19 @@
+PODS:
+  - HR_DataHexString (0.1.1)
+  - HR_Settings (0.1.0):
+    - HR_DataHexString
+
+DEPENDENCIES:
+  - HR_Settings (from `../`)
+
+EXTERNAL SOURCES:
+  HR_Settings:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HR_DataHexString: 598747ea57d5b2df71943c57a99ba56f92434900
+  HR_Settings: fd6a050aac6f5a39f618a4913aa9e37c56290ee5
+
+PODFILE CHECKSUM: 618bb915327635e1b2012d3a6ca34b14c14223ce
+
+COCOAPODS: 1.3.1
