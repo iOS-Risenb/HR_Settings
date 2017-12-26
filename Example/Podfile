@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HR_Settings_Example' do
+  pod 'HR_Settings', :path => '../'
+
+  target 'HR_Settings_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
